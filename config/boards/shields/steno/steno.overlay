@@ -6,14 +6,17 @@
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
-        row-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        
+        // Beide kanten gebruiken dezelfde 3 rijen (zie image_d019de.png)
+        row-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, // ROW0
+                    <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, // ROW1
+                    <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>; // ROW2
 
-        col-gpios = <&gpio0 24 GPIO_ACTIVE_HIGH>,
-                    <&gpio1 0  GPIO_ACTIVE_HIGH>,
-                    <&gpio0 11 GPIO_ACTIVE_HIGH>,
-                    <&gpio1 4  GPIO_ACTIVE_HIGH>,
-                    <&gpio1 6  GPIO_ACTIVE_HIGH>;
+        // Beide kanten gebruiken dezelfde 5 kolommen
+        col-gpios = <&gpio0 24 GPIO_ACTIVE_HIGH>, // COL0
+                    <&gpio1 0  GPIO_ACTIVE_HIGH>, // COL1
+                    <&gpio0 11 GPIO_ACTIVE_HIGH>, // COL2
+                    <&gpio1 4  GPIO_ACTIVE_HIGH>, // COL3
+                    <&gpio1 6  GPIO_ACTIVE_HIGH>; // COL4
     };
 };
