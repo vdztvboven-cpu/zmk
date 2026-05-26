@@ -3,12 +3,11 @@ name: Build ZMK Firmware
 on:
   push:
     branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
   workflow_dispatch:
 
 jobs:
   build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
