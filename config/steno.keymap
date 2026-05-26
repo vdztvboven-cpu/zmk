@@ -7,10 +7,10 @@
 
         default_layer {
             bindings = <
-                /* LINKERKANT (Top, Mid, Duim) */      /* RECHTERKANT (Top, Mid, Duim - zonder eerste twee *) */
+                /* LINKERKANT (image_d10a57.png) */       /* RECHTERKANT (Zonder eerste twee *) */
                 &kp S   &kp T   &kp P   &kp H   &kp STAR      &kp F   &kp P   &kp L   &kp T   &kp D
                 &kp S   &kp K   &kp W   &kp R   &kp STAR      &kp R   &kp B   &kp G   &kp S   &kp Z
-                &kp NONSHARP &kp A &kp O &kp N1 &kp N2        &kp E   &kp U   &kp NONSHARP &kp N3 &kp N4
+                                &kp NONSHARP &kp A &kp O      &kp E   &kp U   &kp NONSHARP
             >;
         };
     };
