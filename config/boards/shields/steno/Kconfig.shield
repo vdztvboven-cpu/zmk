@@ -1,0 +1,5 @@
+config SHIELD_STENO_LEFT
+    def_bool $(shields_list_contains,steno_left)
+
+config SHIELD_STENO_RIGHT
+    def_bool $(shields_list_contains,steno_right)
