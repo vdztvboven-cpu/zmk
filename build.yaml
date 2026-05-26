@@ -1,0 +1,6 @@
+---
+include:
+  - board: nice_nano_v2
+    shield: steno_left
+  - board: nice_nano_v2
+    shield: steno_right
